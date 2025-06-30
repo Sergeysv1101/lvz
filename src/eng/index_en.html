@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVZ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="menu">
+        <div id="sideMenu" class="side-menu">
+            <a href="javascript:void(0)" class="close-btn " onclick="closeMenu()">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="white"/>
+                </svg>
+            </a>
+            <ul>
+                <li><a class="nav_title" href="index_en.html">Home</a></li>
+                <li><a class="nav_title" href="products_en.html">Products</a></li>
+                <li><a class="nav_title" href="services_en.html">Services</a></li>
+                <li><a class="nav_title" href="vacancies_en.html">Vacancies</a></li>
+                <li><a class="nav_title" href="contacts_en.html">Contacts</a></li>
+            </ul>
+        </div> 
+        <span class="open-btn" onclick="openMenu()">
+            <svg width="35px" height="35px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path  stroke="#000" stroke-width="0.5" fill="#fff" fill-rule="evenodd" d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm-8 4a1 1 0 100-2H2a1 1 0 100 2h8zm9 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-9 5a1 1 0 100-2H2a1 1 0 100 2h8z"/>
+            </svg>
+        </span>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo_cont">
+                <img class="logo" src="../images/logo_zawod.png" alt="logo">    
+                <div class="animate__animated animate__fadeInRight wow promo_title">Lubny Machine Tool Factory</div>
+            </div>
+            <div class="subtitle_lang animate__animated animate__fadeInRight wow" data-wow-delay="2s"><a href="../index.html">UKR</a></div>
+        </div>
+    </section>
+    <div class="line">
+        <div class="line_white"></div>
+    </div>
+    <section class="nav">
+        <div class="container">
+            <div class="nav_cont">
+                <a class="animate__animated animate__zoomIn wow nav_title" href="index_en.html">Home</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="0.5s" href="products_en.html">Products</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1s" href="services_en.html">Services</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1.5s" href="vacancies_en.html">Vacancies</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="2s" href="contacts_en.html">Contacts</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about_cont">
+                <div class="about_cont_text">
+                    <div class="animate__animated animate__fadeInLeft animate__slow wow title title_about">About the factory</div>
+                    <div class="animate__animated animate__fadeInLeft animate__slow wow text text_about" data-wow-delay="1s" id="text_about">Joint-Stock Company "MOTOR SICH" is rightfully considered the pride of domestic industry. Having begun its biography in 1907, today it is a multidisciplinary enterprise for the development, production, maintenance in operation and repair of aircraft engines for aircraft of various purposes, helicopters of various classes, gas turbine industrial plants, medical endoprosthetic systems and consumer goods. One of the crucial tasks for our enterprise is the constant renewal and modernization of the machine tool fleet to maintain a high level of competitiveness of production in modern conditions. In this process, the Lubny Machine Tool Plant occupies one of the most important places at our enterprise. The plant not only produces first-class grinding equipment, but also carries out modernization and overhaul of a wide range of metal-cutting machine tools and machining centers. Lubny Machine Tool Plant has a powerful production base and highly qualified personnel to solve problems of equipment modernization and development of new models of highly productive modern equipment.</div>
+                    <button id="toggle-button_about" class="animate__animated animate__fadeIn animate__slow wow about_button" data-wow-delay="2s" onclick="toggleText1()">More info</button>
+                </div>
+                <img class="animate__animated animate__fadeIn animate__slow wow about_img" data-wow-delay="2s" id="about_img" src="../images/about_img.png" alt="about">
+            </div>            
+        </div>
+    </section>
+    <section class="history">
+        <div class="container">
+            <div class="history_cont">
+                <div class="history_cont_text">
+                    <div class="animate__animated animate__fadeInLeft animate__slow wow title title_history">Company history</div>
+                    <div class="animate__animated animate__fadeInLeft animate__slow wow text text_history" data-wow-delay="1s" id="text_history">The history of the Lubensky Machine-Building Plant began in 1915. At that time, the plant was a small enterprise for casting cast iron and copper, work was carried out in the mechanical section. In 1918, the plant was renamed the Kommunar plant and began producing the simplest lathes and planing machines. In 1957, the plant switched to producing more complex finishing metalworking equipment. In 1994, the Open Joint-Stock Company Shlifverst was established on the basis of the Lubensky Machine-Building Plant Kommunar. Since April 2012, the plant has been part of JSC MOTOR SICH. Today, Lubensky Machine-Building Plant JSC MOTOR SICH is a modern machine-building enterprise with wide technological capabilities. The enterprise has foundry, welding, forging and stamping production. All machining operations are performed, heat treatment and electroplating are carried out. Rubber and plastic products are manufactured. Since 2012, the plant has significantly expanded the range of products produced. Along with traditional cylindrical grinding machines, surface grinding and turning machines, machining centers have been manufactured. The machines are distinguished by their modern design, efficiency, accuracy, and ease of maintenance. The plant has successfully mastered overhaul and modernization of machines with the restoration of accuracy standards.</div>
+                    <button class="animate__animated animate__fadeIn animate__slow wow about_button" data-wow-delay="2s" id="toggle-button_history" onclick="toggleText2()">More info</button>
+                </div>
+                <img class="animate__animated animate__fadeIn animate__slow wow history_img" data-wow-delay="2s" id="history_img" src="../images/history_img.png" alt="history">
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages_item advantages_item-en">
+                <div class="advantages_items">
+                    <img class="animate__animated animate__fadeIn animate__slower wow adv_img" src="../icons/gif/project.gif" alt="project">
+                    <div class="animate__animated animate__fadeInUp animate__slow wow advantages_text">High quality products</div>
+                </div>
+                <div class="advantages_items">
+                    <img class="animate__animated animate__fadeIn animate__slower wow adv_img" data-wow-delay="0.5s" src="../icons/gif/calculator.gif" alt="calculator">
+                    <div class="animate__animated animate__fadeInUp animate__slow wow advantages_text" data-wow-delay="0.5s">Optimal price-quality-accuracy ratio</div>
+                </div>
+                <div class="advantages_items">
+                    <img class="animate__animated animate__fadeIn animate__slower wow adv_img" data-wow-delay="1s" src="../icons/gif/laser-cutting.gif" alt="laser_cutting">
+                    <div class="animate__animated animate__fadeInUp animate__slow wow advantages_text" data-wow-delay="1s">Possibility of carrying out commissioning work</div>
+                </div>
+                <div class="advantages_items">
+                    <img class="animate__animated animate__fadeIn animate__slower wow adv_img" data-wow-delay="1.5s" src="../icons/gif/drill.gif" alt="drill">
+                    <div class="animate__animated animate__fadeInUp animate__slow wow advantages_text" data-wow-delay="1.5s">Warranty and post-warranty service</div>
+                </div>
+                <div class="advantages_items">
+                    <img class="animate__animated animate__fadeIn animate__slower wow adv_img" data-wow-delay="2s" src="../icons/gif/virtual-assistant.gif" alt="virtual-assistant">
+                    <div class="animate__animated animate__fadeInUp animate__slow wow advantages_text" data-wow-delay="2s">Consultations on the choice of production technology and proper operation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education">
+        <div class="container">
+            <div class="education_cont" id="cont_edu">
+                <div class="education_text" id="cont_edu">
+                    <div class="text_edu" id="text_edu">
+                        <div class="animate__animated animate__fadeInLeft animate__slow wow title">Educational and methodological center</div>
+                        <div class="animate__animated animate__fadeInLeft animate__slow wow text" data-wow-delay="1s">On the basis of the Lubensky Machine-Building Plant, a Training and Methodological Center has been organized, which conducts collective and individual training for the working professions of turner, turner-borer, grinder, locksmith-repairman, driver of an electric vehicle, driver of a mobile crane, slinger, electrician. It also conducts training on regulatory legal acts on labor protection. After training, state certificates are issued.</div>
+                        <div class="animate__animated animate__fadeInLeft animate__slow wow text" data-wow-delay="1s">              
+                            The separate division "Lubensky Machine Tool Plant" of the Motor Sich Joint-Stock Company conducts training in 13 working professions in accordance with the license of the Ministry of Education and Science of Ukraine dated July 1, 2014, series AE No. 458620, namely: gas cutter, electric gas welder, slinger, electrician for repair and maintenance of electrical equipment, crane operator (crane operator), electric and truck driver, turner, forklift driver, turner-borer, locksmith-repairer, locksmith for mechanical assembly works, grinder, milling operator.
+                        </div>                    
+                        <div class="animate__animated animate__fadeInLeft animate__slow wow text"  data-wow-delay="1s">The great advantage of training at our plant is:
+                            <br> 1. Simultaneous combination of theoretical and practical training of students, since the classrooms are located on the territory of the enterprise and all machines and production equipment are always used in the educational process. That is, students work half of their working time in classrooms, and the other half - together with a mentor, which accelerates the time for students to master practical skills.
+                            <br> 2. Drawing up an individual training program, in accordance with the level of education of the potential worker.
+                            <br> 3. Prompt response and adaptation of trained personnel - specialists - teachers to the needs of the labor market, which contributes to increasing the competitiveness of the enterprise as a whole.
+                            <br> 4. Possibility of employment for students under available job vacancies, with further training at the expense of the plant and receiving a salary.
+                            <br> The qualification level of a worker, his qualification characteristics are determined in accordance with regulatory documents that contain the requirements for education, a list of basic knowledge, skills, abilities that a worker of a given profession must have. Specialist teachers of the plant, with extensive work experience, provide the necessary level of professional training of qualified workers. After graduation, a state-issued document (certificate) is issued, which indicates the level of education obtained - "qualified worker" in a certain professional qualification.
+                        </div>
+                    </div>
+                    <button class="animate__animated animate__fadeIn animate__slow wow about_button" data-wow-delay="2s" id="toggle-button_edu" onclick="toggleText3()">More</button>
+                </div>
+                <img class="animate__animated animate__fadeIn animate__slow wow edu_img" id="edu_img" data-wow-delay="2s" src="../icons/gif/teacher.gif" alt="teacher">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+           <div class="footer_cont">
+                <div class="footer_descr">
+                    JSC "MOTOR SICH" "Lubensky Machine Tool Plant" Ukraine, 37500, Poltava region, Lubny, 19/12 Verstatobudodivnykyv str.<br>
+                    tel./fax +38(05361) 7-17-17 reception <br>
+                    tel./fax +38(05361) 7-39-20 marketing department <br>
+                    E-mail: lsz@motorsich.com <br>
+                    Internet: www.motorsich.com <br>
+                </div>
+                <div class="footer_descr">
+                    © 2025, <br>
+                    All rights are reserved and protected in accordance with the current legislation of Ukraine. The use of information, photos and video materials in any form is allowed only with a link to the official website of Lubny Machine-Building Plant JSC "Motor Sich".
+                </div>
+           </div>
+        </div>
+    </section>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script_main_eng.js"></script>
+</body>
+</html>

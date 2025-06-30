@@ -1,0 +1,104 @@
+@import "main/_style_main"
+@import "services/_style_services"
+@import "vacancies/_style_vacancies"
+@import "contacts/_style_contacts"
+@import "products/_style_products"
+@import "_style_menu"
+
+.subtitle_lang a
+	color: #fff
+	text-decoration: none
+.container
+	width: 1200px
+	margin: 0 auto
+.title
+	font-size: 20px
+	color: #000
+	font-family: "IBM Plex Sans"
+	font-weight: 600
+.text
+	color: #000
+	font-family: "IBM Plex Sans"
+	font-size: 16px
+	font-weight: 400
+.subtitle
+	color: #0D4C96
+	font-family: "IBM Plex Sans"
+	font-size: 14px
+	font-weight: 700
+body
+	margin: 0 0 0 0
+
+.promo
+	background: #0D4C96
+	&_cont
+		display: flex
+		justify-content: space-between
+		align-items: center 
+		padding: 35px 0 35px
+	&_title
+			color: #FFF
+			font-family: "IBM Plex Sans"
+			font-size: 36px
+			font-weight: 700
+			text-transform: uppercase
+			width: auto
+			height: 36px
+.subtitle_lang
+	position: absolute
+	color: #FFF
+	font-family: "IBM Plex Sans"
+	font-size: 16px
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+	top: 20px
+	right: 20px
+	transition: all 0.6s
+	&:hover
+		transform: scale(1.2)
+		transition: all 0.6s
+
+.nav
+	width: auto
+	height: auto
+	background: #0D4C96
+	&_cont
+		display: flex
+		height: 50px
+		justify-content: space-around
+		align-items: center
+	&_title
+		position: relative
+		color: #FFF
+		font-family: "IBM Plex Sans"
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		height: 20px
+		text-decoration: none
+		transition: all 0.6s
+		&:hover
+			transform: scale(1.2)
+			transition: all 0.6s
+.footer
+	background: #0D4C96
+	height: auto
+	&_cont
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 20px 0 20px 0
+
+	&_descr
+		color: #FFF
+		font-family: "IBM Plex Sans"
+		font-size: 14px
+		font-weight: 400
+		width: 450px
+		height: 120px
+.logo
+	width: 120px
+	height: 120px
+@import "../sass/style_eng"
+@import "../sass/media"

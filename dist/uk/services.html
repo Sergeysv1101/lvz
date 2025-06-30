@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVZ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="menu">
+        <div id="sideMenu" class="side-menu">
+            <a href="javascript:void(0)" class="close-btn " onclick="closeMenu()">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="white"/>
+                </svg>
+            </a>
+            <ul>
+                <li><a class="nav_title" href="../index.html">Головна</a></li>
+                <li><a class="nav_title" href="products.html">Продукція</a></li>
+                <li><a class="nav_title" href="services.html">Послуги</a></li>
+                <li><a class="nav_title" href="vacancies.html">Вакансії</a></li>
+                <li><a class="nav_title" href="contacts.html">Контакти</a></li>
+            </ul>
+        </div> 
+        <span class="open-btn" onclick="openMenu()">
+            <svg width="35px" height="35px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path  stroke="#000" stroke-width="0.5" fill="#fff" fill-rule="evenodd" d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm-8 4a1 1 0 100-2H2a1 1 0 100 2h8zm9 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-9 5a1 1 0 100-2H2a1 1 0 100 2h8z"/>
+            </svg>
+        </span>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo_cont">
+                <img class="logo" src="../images/logo_zawod.png" alt="logo">   
+                <div class="animate__animated animate__fadeInRight wow promo_title">Лубенський верстатобудівний завод</div>
+            </div>
+            <div class="subtitle_lang animate__animated animate__fadeInRight wow" data-wow-delay="1s"><a href="../eng/services_en.html">EN</a></div>
+        </div>
+    </section>
+    <section class="nav">
+        <div class="container">
+            <div class="nav_cont">
+                <a class="animate__animated animate__zoomIn wow nav_title"  href="../index.html">Головна</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="0.5s" href="products.html">Продукція</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1s" href="services.html">Послуги</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1.5s" href="vacancies.html">Вакансії</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="2s" href="contacts.html">Контакти</a>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services_list">
+                <div class="title title_services animate__animated animate__fadeInLeft animate__slow wow">
+                    ТЕХНОЛОГIЧНI МОЖЛИВОСТI ПIДПРИЄМСТВА
+                </div>
+                <ul class="services_li-main">
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="0.5s">
+                        ЛИТВО
+                    </li>
+                    <div class="toggle-button toggle-button1 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="1s" id="toggle-button-serv1" onclick="toggleServ1()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text1" class="text">
+                        Виготовляються відливки з чавуну марок СЧ15, СЧ20 методом
+                        лиття в піщано-глинисті форми з ручним формуванням (на
+                        плацу) і лиття в кокіль.
+                        <br>- плацеве формування: максимальна вага відливки — 1000 кг
+                        <br>- лиття в кокіль: максимальна вага відливки — до 20 кг
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="1.5s">
+                        ЗВАРНI МЕТАЛОКОНСТРУКЦIЇ
+                    </li>
+                    <div class="toggle-button toggle-button2 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="2s" id="toggle-button-serv2" onclick="toggleServ2()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text2" class="text">максимальні габарити — 3500х2100х1500 мм
+                        <br>максимальна вага — до 300 кг.
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="2.5s">
+                        КОВАЛЬСЬКО-ШТАМПУВАЛЬНЕ ВИРОБНИЦТВО
+                    </li>
+                    <div class="toggle-button toggle-button3 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="3s" id="toggle-button-serv3" onclick="toggleServ3()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text3" class="text">
+                        Виготовлення поковок методом вільного кування і кування в підкладних штампах на молотах (вага падаючих частин 700 кг, 400 кг, 160 кг).
+                        <br>Згинання листових деталей на кромкогнучкому пресі: максимальна довжина — до 3 м, максимальна ширина деталі — 1,2 м, вага — до 20 кг.
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="3.5s">
+                        МЕХАНООБРОБНЕ ВИРОБНИЦТВО
+                        <ul class="services_ul-dop animate__animated animate__fadeIn animate__faster wow" data-wow-delay="4s">
+                            <li>Токарні роботи</li>
+                            <div class="toggle-button toggle-button4" id="toggle-button-serv4" onclick="toggleServ4()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text4" class="text">Обробка деталей на токарно-гвинторізних, токарно-револьверних верстатах, токарних автоматах і напівавтоматах з ЧПУ:
+                                <br>- обробка у патроні штучних заготовок діаметром до 630 мм
+                                <br>- обробка заготовок з прутка діаметром до 65 мм
+                                <br>- обробка в центрах: максимальний діаметр — 350 мм, максимальна довжина — 2800 мм
+                            </p>
+                            <li>Свердлувальні роботи</li>
+                            <div class="toggle-button toggle-button5" id="toggle-button-serv5" onclick="toggleServ5()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text5" class="text">
+                                Обробка отворів:
+                                <br>- на вертикально-свердлувальних верстатах з ручним керуванням і з ЧПУ: максимальний діаметр свердління — 35 мм, висота деталі — до 500 мм, максимальна довжина свердління — 175 мм
+                                <br>- на радіально-свердлувальних верстатах: максимальний діаметр свердління — 100 мм
+                                <br>- граничні габаритні розміри оброблюваних деталей: довжина — 3500 мм, ширина — 1300 мм, висота — 1500 мм
+                            </p>
+                            <li>
+                                Розточувальні роботи
+                            </li>
+                            <div class="toggle-button toggle-button6" id="toggle-button-serv6" onclick="toggleServ6()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text6" class="text">
+                                Розточувальні роботи:
+                                <br>- обробка деталей на горизонтально-розточувальних верстатах і на обробних центрах:
+                                <br>- граничні габаритні розміри оброблюваних деталей: довжина — 500 мм, ширина — 2000 мм, висота — 2000 мм
+                                <br>-максимальний діаметр розточення — 400 мм
+                                <br>- обробка точних деталей на координатно-розточувальних верстатах: максимальний діаметр розточення — 500 мм, максимальні розміри оброблюваних деталей — 800х800х800 мм, найбільша вага оброблюваної деталі — 800 кг
+                                <br>Точність обробки:
+                                <br>- постійність діаметра у поперечному перерізі — 0,002 мм
+                                <br>- у будь-якому перетині — 0,006 мм
+                                <br>- круглість — 0,003 мм
+                                <br>- площина торця — 0,008 мм
+                            </p>
+                            <li>Шліфувальні роботи</li>
+                            <div class="toggle-button toggle-button7" id="toggle-button-serv7" onclick="toggleServ7()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text7" class="text">
+                                Шліфувальні роботи:
+                                <br>- шліфування зовнішніх поверхонь на круглошліфувальних
+                                верстатах: максимальний діаметр — 400 мм, максимальна довжина шліфування — 2000 мм
+                                <br>Точність обробки: круглість — 0,0016-0,0008 мм, шорсткість — 0,32-0,16 мкм
+                                <br>- шліфування отворів на внутрішньошліфувальних верстатах: максимальний діаметр — 450 мм, мінімальний діаметр — 20 мм, довжина шліфування — до 320 мм
+                                <br>Точність обробки: конусність — 0,006-0,004 мм, круглість — 0,004-0,001 мм, шорсткість — 0,32 мкм
+                                <br>- шліфування на плоскошліфувальних верстатах: максимальні розміри оброблюваних деталей: довжина — 2000 мм, ширина — 630 мм
+                                <br>Точність обробки: площинність — 0,006-0,004 мм, паралельність — 0,004 мм, шорсткість — 0,32 мкм
+                                <br>- поздовжнє шліфування на поздовжньо-шліфувальних
+                                верстатах:
+                                <br>обробка корпусних деталей з максимальними розмірами: довжина — 6000 мм, ширина — 1800 мм, висота — 1500 мм
+                                <br>Точність обробки: прямолінійність на 1000 мм довжини — 0,002 мм, паралельність на 1000 мм довжини — 0,004 мм, шорсткість — 0,80 мкм
+                                <br>- безцентрове шліфування: діаметр шліфування — від 4 до 8 мм, довжина шліфування — до 1000 мм, шорсткість — 0,63 мкм
+                                <br>- шліцьошліфування: шліфування шліцьових валів діаметром від 25 мм до 125 мм, довжина шліфування — до 1250 мм, довжина встановлюваного виробу — 1400 мм, число зубів роздільного диска — 48
+                                <br>Точність обробки: паралельність зуба осі вироба — 0,012 мм, на довжині — 300 мм, шорсткість — 0,25 мкм
+                                <br>- різьбошліфування:
+                                <br>розміри оброблюваної деталі: діаметр — до 200 мм, довжина — до 1500 мм ,крок шліфувальної різьби метричної від 1,5 до 24 мм, трапеціїдальної від 2 до 24 мм, число заходів шліфувальних різьб від 1 до 24
+                                <br>Точність обробки: по кроку: на 25 мм — Ø 0,005 мм, на 300 мм — Ø 0,009 мм, з підйому гвинтової лінії — Ø 0,004 мм
+                                <br>по середньому діаметру: овал — 0,005 мм, конус — 0,012/500 мм
+                            </p>
+                            <li>
+                                Зубообробка
+                            </li>
+                            <div class="toggle-button toggle-button8" id="toggle-button-serv8" onclick="toggleServ8()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text8" class="text">
+                                <br>- фрезерування зубчастих коліс, шестерень, валів-шестерень
+                                на зубофрезерних верстатах: мінімальний модуль — 2, максимальний модуль — 6, максимальний діаметр — 800 мм, максимальна висота — 275 мм, кут повороту супорта — 60 градусів, ступінь точності — 8, шорсткість — Rz 12,5
+                                <br>- зубодовбання зубчастих коліс на зубодовбальних верстатах:
+                                <br>з зовнішнім зубом: мінімальний модуль — 2, максимальний модуль — 6, максимальний діаметр — 500 мм, максимальна висота — 105 мм, ступінь точності — 8
+                                <br>з внутрішнім зубом: мінімальний модуль — 2, максимальний модуль — 6, максимальний діаметр — 400 мм, максимальна висота — 85 мм, ступінь точності – 8
+                                <br>- зубостругання на зубостругальних верстатах: мінімальний модуль — 1,5, максимальний модуль — 8,  максимальний діаметр — 600 мм, максимальна висота — 90 мм, ступінь точності — 9, шорсткість — Rz 20
+                                <br>- зубошліфування: мінімальний модуль — 0,5, максимальний модуль – 10, максимальний діаметр — 500 мм, максимальна висота — 212 мм, ступінь точності — 6, шорсткість — 0,80, кут нахилу — 45 градусів
+                                <br>- зубодовбання рейок: максимальний модуль — 8, довжина нарізувальної рейки — 1100 мм, ступінь точності — 8, шорсткість — Rz 20
+                            </p>
+                            <li>
+                                Фрезерні роботи
+                            </li>
+                            <div class="toggle-button toggle-button9" id="toggle-button-serv9" onclick="toggleServ9()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text9" class="text">
+                                - фрезерування корпусних деталей на поздовжньо-фрезерних
+                                верстатах:
+                                <br>Граничні розміри обробки: довжина — 6000 мм, ширина — 2000 мм, висота — 2000 мм
+                                <br>- фрезерування корпусних і площинних деталей на вертикально-фрезерних і горизонтально-фрезерних верстатах:
+                                <br>Граничні розміри обробки: довжина — 1500 мм, ширина — 600 мм, висота — 550 мм
+                            </p>
+                            <li>Стругальні роботи</li>
+                            <div class="toggle-button toggle-button10" id="toggle-button-serv10" onclick="toggleServ10()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text10" class="text">
+                                - стругання великих, середніх корпусних деталей на поздовжньо-стругальних верстатах
+                                <br>Граничні розміри обробки: довжина — 8000 мм, ширина — 2800 мм, висота — 2450 мм
+                                <br>- стругання корпусів, площинних деталей на поперечно-стругальних верстатах
+                                <br>Граничні розміри обробки: довжина — 700 мм, ширина — 400 мм, висота — 550 мм
+                            </p>
+                            <li>
+                                Горизонтально-протяжні роботи
+                            </li>
+                            <div class="toggle-button toggle-button11" id="toggle-button-serv11" onclick="toggleServ11()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text11" class="text">
+                                максимальна довжина ходу повзуна — 1200 мм,
+                                <br>максимальний діаметр деталі — 600 мм,
+                                <br>максимальне зусилля протягування – 10 кН.
+                            </p>
+                        </ul>
+                    </li>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="4.5s">
+                        ТЕРМIЧНА ОБРОБКА
+                    </li>
+                    <div class="toggle-button toggle-button12 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="5s" id="toggle-button-serv12" onclick="toggleServ12()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text12" class="text">
+                        Розмір робочого простору термічних печей:
+                        <br>- цементації — ø600х1200 мм
+                        <br>- нормалізації — 600х1200х500 мм
+                        <br>- загартування з нагріванням ТВЧ — ø400х2000 мм
+                        <br>- відпуск низького — 650х1300х400 мм
+                        <br>- поліпшення — 600х1200х500 мм
+                        <br>- об’ємного загартування — 600х1200х500 мм
+                        <br>- відпалювання, відпуск високий, стабілізуючий відпуск: Ш600х1200 мм; Ш1000х1000 мм; 650х1300х400 мм
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="5.5s">
+                        ВИРОБНИЦТВО ГАЛЬВАНОПОКРИТТЯ
+                    </li>
+                    <div class="toggle-button toggle-button13 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="6s" id="toggle-button-serv13" onclick="toggleServ13()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text13" class="text">
+                        - оксидування:
+                        <br>максимальні розміри оброблюваних деталей: 1200х1000х600 мм
+                        <br>- хромування:
+                        <br>максимальні розміри оброблюваних деталей: 3000х300х150 мм
+                        <br>- цинкування:
+                        <br>максимальні розміри оброблюваних деталей: 600х400х200 мм
+                        <br>- лудіння:
+                        <br>максимальні розміри оброблюваних деталей: 400х300х150 мм
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="6.5s">
+                        ВИГОТОВЛЕННЯ ГУМОТЕХНIЧНI ВИРОБIВ
+                    </li>
+                    <div class="toggle-button toggle-button14 animate__animated animate__fadeIn animate__faster wow" data-wow-delay="7s" id="toggle-button-serv14" onclick="toggleServ14()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text14" class="text">
+                        Марки гуми:
+                        <br>7-4004 ТУЗ8005204-84;
+                        <br>7-3825 ТУЗ8005204-71;
+                        <br>7-4161 ТУЗ8005204-71.
+                        <br>Максимальне зусилля пресування 1000 кН
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="7.5s">
+                        ВИГОТОВЛЕННЯ ВИРОБIВ IЗ ПЛАСТМАСИ
+                        <ul class="services_ul-dop animate__animated animate__fadeIn animate__faster wow" data-wow-delay="8s">
+                            <li>
+                                Метод пресування
+                            </li>
+                            <div class="toggle-button toggle-button15" id="toggle-button-serv15" onclick="toggleServ15()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text15" class="text">
+                                Матеріали:
+                                <br>Фенопласт ФФ202 ГОСТ 28804-90
+                                <br>Фенопласт ФФ1У1 ГОСТ 28804-90
+                                <br>Обладнання, що застосовується — прес гідравлічний Д2430Б
+                            </p>
+                            <li>
+                                Метод лиття під тиском
+                            </li>
+                            <div class="toggle-button toggle-button16" id="toggle-button-serv16" onclick="toggleServ16()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text16" class="text">
+                                Матеріали:
+                                <br>Поліетилен 10703-020 ГОСТ 16337-77
+                                <br>Поліетилен 21008-075 ГОСТ 16338-85
+                                <br>Поліпропілен 01010-06 ГОСТ 26996-86
+                                <br>Полістирол ПСМ-111-20 ГОСТ 20282-86
+                                <br>Обладнання, що застосовується — Термопластавтомат — ДЕ3330Ф1.
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+           <div class="footer_cont">
+                <div class="footer_descr">
+                    АТ «МОТОР СIЧ» «Лубенськийверстатобудівний завод» Україна, 37500, Полтавська обл., м. Лубни, вул. Верстатобудівників, 19/12 <br>
+                    тел./факс +38(05361) 7-17-17 приймальня <br>
+                    тел./факс +38(05361) 7-39-20 відділ маркетингу <br>
+                    E-mail: lsz@motorsich.com <br>
+                    Internet: www.motorsich.com <br>
+                </div>
+                <div class="footer_descr">
+                    © 2025, <br>
+                    Усі права захищені та охороняються відповідно до чинного законодавства України. Використання інформації, фото та відеоматеріалів у будь-якій формі допускається тільки з посиланням на офіційний сайт Лубенського верстатобудівного заводу АТ "Мотор Січ".
+                </div>
+           </div>
+        </div>
+    </section>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script_services.js"></script>
+</body>
+</html>

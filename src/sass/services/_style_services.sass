@@ -1,0 +1,49 @@
+@import "_toggle-button"
+.title_services
+	padding: 50px 0 0 0
+ul
+	font-size: 20px
+	color: #000
+	font-family: "IBM Plex Sans"
+	font-weight: 600
+
+ul li::marker
+	color: #D91C52
+li
+	font-size: 18px
+	color: #000
+	font-family: "IBM Plex Sans"
+	font-weight: 600
+p
+	font-size: 16px
+	color: #000
+	font-family: "IBM Plex Sans"
+	font-weight: 400
+	margin: 0
+	display: none 
+	position: relative
+	top: -15px
+
+.arrow
+	cursor: pointer
+	border: solid #0D4C96
+	border-width: 0 3px 3px 0
+	display: inline-block
+	padding: 3px
+	transform: rotate(45deg)
+	transition: all 0.6s
+	&:hover
+		border: solid #D91C52
+		border-width: 0 3px 3px 0
+		display: inline-block
+		padding: 3px
+		transform: rotate(45deg)
+		&::before
+			border: solid #0D4C96
+			border-width: 0 3px 3px 0
+			display: inline-block
+			padding: 3px
+			transform: rotate(45deg)
+
+.text.expended
+	display: block

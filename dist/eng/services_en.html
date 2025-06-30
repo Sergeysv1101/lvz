@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVZ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="menu">
+        <div id="sideMenu" class="side-menu">
+            <a href="javascript:void(0)" class="close-btn " onclick="closeMenu()">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="white"/>
+                </svg>
+            </a>
+            <ul>
+                <li><a class="nav_title" href="index_en.html">Home</a></li>
+                <li><a class="nav_title" href="products_en.html">Products</a></li>
+                <li><a class="nav_title" href="services_en.html">Services</a></li>
+                <li><a class="nav_title" href="vacancies_en.html">Vacancies</a></li>
+                <li><a class="nav_title" href="contacts_en.html">Contacts</a></li>
+            </ul>
+        </div> 
+        <span class="open-btn" onclick="openMenu()">
+            <svg width="35px" height="35px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path  stroke="#000" stroke-width="0.5" fill="#fff" fill-rule="evenodd" d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm-8 4a1 1 0 100-2H2a1 1 0 100 2h8zm9 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-9 5a1 1 0 100-2H2a1 1 0 100 2h8z"/>
+            </svg>
+        </span>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo_cont">
+                <img class="logo" src="../images/logo_zawod.png" alt="logo">   
+                <div class="animate__animated animate__fadeInRight wow promo_title">Lubny Machine Tool Factory</div>
+            </div>
+            <div class="subtitle_lang animate__animated animate__fadeInRight wow" data-wow-delay="2s"><a href="../uk/services.html
+                ">UKR</a></div>
+        </div>
+    </section>
+    <div class="line">
+        <div class="line_white"></div>
+    </div>
+    <section class="nav">
+        <div class="container">
+            <div class="nav_cont">
+                <a class="animate__animated animate__zoomIn wow nav_title" href="index_en.html">Home</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="0.5s" href="products_en.html">Products</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1s" href="services_en.html">Services</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="1.5s" href="vacancies_en.html">Vacancies</a>
+                <a class="animate__animated animate__zoomIn wow nav_title" data-wow-delay="2s" href="contacts_en.html">Contacts</a>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services_list">
+                <div class="title title_services animate__animated animate__fadeInLeft animate__slow wow">
+                    TECHNOLOGICAL CAPABILITIES OF THE ENTERPRISE
+                </div>
+                <ul class="services_li-main">
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="0.5s">
+                        CASTING
+                    </li>
+                    <div class="toggle-button toggle-button1 toggle-button1-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="1s" id="toggle-button-serv1" onclick="toggleServ1()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text1" class="text">
+                        Castings are made from cast iron of grades SCh15, SCh20 by the method of
+                        casting in sand-clay molds with manual molding (on the
+                        platform) and casting in a chill mold.
+                        <br>- platform molding: maximum casting weight - 1000 kg
+                        <br>- casting in a chill mold: maximum casting weight - up to 20 kg
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="1.5s">
+                        WELDED METAL STRUCTURES
+                    </li>
+                    <div class="toggle-button toggle-button2 toggle-button2-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="2s" id="toggle-button-serv2" onclick="toggleServ2()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text2" class="text">
+                        maximum dimensions — 3500x2100x1500 mm
+                        <br>maximum weight — up to 300 kg.
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="2.5s">
+                        BLACKSMITH AND STAMPING PRODUCTION
+                    </li>
+                    <div class="toggle-button toggle-button3 toggle-button3-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="3s" id="toggle-button-serv3" onclick="toggleServ3()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text3" class="text">
+                        Production of forgings by open forging and forging in undercut dies on hammers (weight of falling parts 700 kg, 400 kg, 160 kg).
+                        <br>Bending of sheet metal parts on an edge bending press: maximum length - up to 3 m, maximum width of the part - 1.2 m, weight - up to 20 kg.
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="3.5s">
+                        MACHINING PRODUCTION
+                        <ul class="services_ul-dop animate__animated animate__fadeIn animate__faster wow" data-wow-delay="4s">
+                            <li>Turning work</li>
+                            <div class="toggle-button toggle-button4 toggle-button4-en" id="toggle-button-serv4" onclick="toggleServ4()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text4" class="text">
+                                Machining of parts on turning-screw-cutting, turning-turret machines, automatic lathes and semi-automatic CNC machines:
+                                <br>- chuck work from piece blanks with a diameter of up to 630 mm
+                                <br>- from a rod with a diameter of up to 65 mm
+                                <br>- machining in centers: maximum diameter - 350 mm, maximum length - 2800 mm
+                            </p>
+                            <li>Drilling work</li>
+                            <div class="toggle-button toggle-button5 toggle-button5-en" id="toggle-button-serv5" onclick="toggleServ5()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text5" class="text">
+                                Hole processing:
+                                <br>- on manual and CNC vertical drilling machines: maximum drilling diameter - 35 mm, part height - up to 500 mm, maximum drilling length - 175 mm
+                                <br>- on radial drilling machines: maximum drilling diameter - 100 mm
+                                <br>- maximum overall dimensions of the processed parts: length - 3500 mm, width - 1300 mm, height - 1500 mm
+                            </p>
+                            <li>
+                                Boring work
+                            </li>
+                            <div class="toggle-button toggle-button6 toggle-button6-en" id="toggle-button-serv6" onclick="toggleServ6()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text6" class="text">
+                                Boring work:
+                                <br>- processing of parts on horizontal boring machines and machining centers:
+                                <br>- maximum overall dimensions of the parts being processed: length - 500 mm, width - 2000 mm, height - 2000 mm
+                                <br>- maximum diameter of boring - 400 mm
+                                <br>- processing of precision parts on coordinate boring machines: maximum diameter of boring - 500 mm, maximum dimensions of the parts being processed - 800x800x800 mm, maximum weight of the part being processed - 800 kg
+                                <br>Processing accuracy:
+                                <br>- diameter constancy in the cross section - 0.002 mm
+                                <br>- in any section - 0.006 mm
+                                <br>- roundness - 0.003 mm
+                                <br>- end face plane - 0.008 mm
+                            </p>
+                            <li>Grinding work</li>
+                            <div class="toggle-button toggle-button7 toggle-button7-en" id="toggle-button-serv7" onclick="toggleServ7()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text7" class="text">
+                                Grinding work:
+                                <br>- grinding of external surfaces on cylindrical grinding machines: maximum diameter - 400 mm, maximum grinding length - 2000 mm
+                                <br>Processing accuracy: roundness - 0.0016-0.0008 mm, roughness - 0.32-0.16 mm
+                                <br>- grinding of holes on internal grinding machines: maximum diameter - 450 mm, minimum diameter - 20 mm, grinding length - up to 320 mm
+                                <br>Processing accuracy: taper - 0.006-0.004 mm, roundness - 0.004-0.001 mm, roughness - 0.32 mm
+                                <br>- grinding on surface grinding machines: maximum dimensions of the processed parts: length - 2000 mm, width - 630 mm
+                                <br>Processing accuracy: flatness — 0.006-0.004 mm, parallelism — 0.004 mm, roughness — 0.32 mm
+                                <br>- longitudinal grinding on longitudinal grinding machines:
+                                <br>processing of body parts with maximum dimensions: length — 6000 mm, width — 1800 mm, height — 1500 mm
+                                <br>Processing accuracy: straightness per 1000 mm of length — 0.002 mm, parallelism per 1000 mm of length — 0.004 mm, roughness — 0.80 mm
+                                <br>- centerless grinding: grinding diameter — from 4 to 8 mm, grinding length — up to 1000 mm, roughness — 0.63 mm
+                                <br>- spline grinding: grinding of spline shafts with a diameter from 25 mm to 125 mm, grinding length - up to 1250 mm, length of the installed product - 1400 mm, number of teeth of the separating disk - 48
+                                <br>Processing accuracy: parallelism of the tooth to the axis of the product - 0.012 mm, length - 300 mm, roughness - 0.25 mm
+                                <br>- thread grinding:
+                                <br>dimensions of the workpiece: diameter - up to 200 mm, length - up to 1500 mm, step of the grinding thread metric from 1.5 to 24 mm, trapezoidal from 2 to 24 mm, number of grinding thread passes from 1 to 24
+                                <br>Processing accuracy: step: per 25 mm - Ø 0.005 mm, per 300 mm - Ø 0.009 mm, with lifting helix — Ø 0.004 mm
+                                <br>by average diameter: oval — 0.005 mm, cone — 0.012/500 mm
+                            </p>
+                            <li>
+                                Gear machining
+                            </li>
+                            <div class="toggle-button toggle-button8 toggle-button8-en" id="toggle-button-serv8" onclick="toggleServ8()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text8" class="text">
+                                <br>- milling of gears, gears, gear shafts
+                                on gear milling machines: minimum module — 2, maximum module — 6, maximum diameter — 800 mm, maximum height — 275 mm, support rotation angle — 60 degrees, accuracy level — 8, roughness — Rz 12.5
+                                <br>- gear hobbing on gear hobbing machines:
+                                <br>with external tooth: minimum module — 2, maximum module — 6, maximum diameter — 500 mm, maximum height — 105 mm, accuracy level — 8
+                                <br>with internal tooth: minimum module — 2, maximum module — 6, maximum diameter — 400 mm, maximum height — 85 mm, accuracy level – 8
+                                <br>- gear hobbing on gear hobbing machines: minimum module — 1.5, maximum module — 8, maximum diameter — 600 mm, maximum height — 90 mm, accuracy level — 9, roughness — Rz 20
+                                <br>- gear grinding: minimum module — 0.5, maximum module — 10, maximum diameter — 500 mm, maximum height — 212 mm, accuracy level — 6, roughness — 0.80, inclination angle — 45 degrees
+                                <br>- rail gearing: maximum module — 8, length of the cutting rail — 1100 mm, accuracy level — 8, roughness — Rz 20
+                            </p>
+                            <li>
+                                Milling work
+                            </li>
+                            <div class="toggle-button toggle-button9 toggle-button9-en" id="toggle-button-serv9" onclick="toggleServ9()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text9" class="text">
+                                - milling of body parts on longitudinal milling machines:
+                                <br>Limited processing dimensions: length - 6000 mm, width - 2000 mm, height - 2000 mm
+                                <br>- milling of body and plane parts on vertical milling and horizontal milling machines:
+                                <br>Limited processing dimensions: length - 1500 mm, width - 600 mm, height - 550 mm
+                            </p>
+                            <li>Planing work</li>
+                            <div class="toggle-button toggle-button10 toggle-button10-en" id="toggle-button-serv10" onclick="toggleServ10()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text10" class="text">
+                                - planing of large, medium-sized body parts on longitudinal planing machines
+                                <br>Limited processing dimensions: length - 8000 mm, width - 2800 mm, height - 2450 mm
+                                <br>- planing of bodies, flat parts on cross-planing machines
+                                <br>Limited processing dimensions: length - 700 mm, width - 400 mm, height - 550 mm
+                            </p>
+                            <li>
+                                Horizontal and extended work
+                            </li>
+                            <div class="toggle-button toggle-button11 toggle-button11-en" id="toggle-button-serv11" onclick="toggleServ11()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text11" class="text">
+                                maximum slide stroke length — 1200 mm,
+                                <br>maximum part diameter — 600 mm,
+                                <br>maximum drawing force — 10 kN.
+                            </p>
+                        </ul>
+                    </li>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="4.5s">
+                        HEAT TREATMENT
+                    </li>
+                    <div class="toggle-button toggle-button12 toggle-button12-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="5s" id="toggle-button-serv12" onclick="toggleServ12()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text12" class="text">
+                        The size of the working space of thermal furnaces:
+                        <br>- cementation — ø600x1200 mm
+                        <br>- normalization — 600x1200x500 mm
+                        <br>- hardening with high-frequency heating — ø400x2000 mm
+                        <br>- low tempering — 650x1300x400 mm
+                        <br>- improvement — 600x1200x500 mm
+                        <br>- volume hardening — 600x1200x500 mm
+                        <br>- annealing, high tempering, stabilizing tempering: W600x1200 mm; W1000x1000 mm; 650x1300x400 mm
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="5.5s">
+                        GALVANIZING PRODUCTION
+                    </li>
+                    <div class="toggle-button toggle-button13 toggle-button13-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="6s" id="toggle-button-serv13" onclick="toggleServ13()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text13" class="text">
+                        - oxidation:
+                        <br>maximum dimensions of processed parts: 1200x1000x600 mm
+                        <br>- chrome plating:
+                        <br>maximum dimensions of processed parts: 3000x300x150 mm
+                        <br>- zinc plating:
+                        <br>maximum dimensions of processed parts: 600x400x200 mm
+                        <br>- tin plating:
+                        <br>maximum dimensions of processed parts: 400x300x150 mm
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="6.5s">
+                        MANUFACTURING OF RUBBER PRODUCTS
+                    </li>
+                    <div class="toggle-button toggle-button14 toggle-button14-en animate__animated animate__fadeIn animate__faster wow" data-wow-delay="7s" id="toggle-button-serv14" onclick="toggleServ14()">
+                        <span class="arrow"></span>
+                    </div>
+                    <p id="text14" class="text">
+                        Applicable rubber grades:
+                        <br>7-4004 TUZ8005204-84;
+                        <br>7-3825 TUZ8005204-71;
+                        <br>7-4161 TUZ8005204-71.
+                        <br>Maximum pressing force 1000 kN
+                    </p>
+                    <li class="animate__animated animate__fadeIn animate__faster wow" data-wow-delay="7.5s">
+                        MANUFACTURING OF PLASTIC PRODUCTS
+                        <ul class="services_ul-dop animate__animated animate__fadeIn animate__faster wow" data-wow-delay="8s">
+                            <li>
+                                Pressing method
+                            </li>
+                            <div class="toggle-button toggle-button15 toggle-button15-en" id="toggle-button-serv15" onclick="toggleServ15()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text15" class="text">
+                                Recycled materials:
+                                <br>Phenoplast FF202 GOST 28804-90
+                                <br>Phenoplast FF1U1 GOST 28804-90
+                                <br>Equipment used — hydraulic press D2430B
+                            </p>
+                            <li>
+                                Injection molding method
+                            </li>
+                            <div class="toggle-button toggle-button16 toggle-button16-en" id="toggle-button-serv16" onclick="toggleServ16()">
+                                <span class="arrow"></span>
+                            </div>
+                            <p id="text16" class="text">
+                                Recycled materials:
+                                <br>Polyethylene 10703-020 GOST 16337-77
+                                <br>Polyethylene 21008-075 GOST 16338-85
+                                <br>Polypropylene 01010-06 GOST 26996-86
+                                <br>Polystyrene PSM-111-20 GOST 20282-86
+                                <br>Equipment used — Automatic thermoforming machine — DE3330F1.
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+           <div class="footer_cont">
+                <div class="footer_descr">
+                    JSC "MOTOR SICH" "Lubensky Machine Tool Plant" Ukraine, 37500, Poltava region, Lubny, 19/12 Verstatobudodivnykyv str.<br>
+                    tel./fax +38(05361) 7-17-17 reception <br>
+                    tel./fax +38(05361) 7-39-20 marketing department <br>
+                    E-mail: lsz@motorsich.com <br>
+                    Internet: www.motorsich.com <br>
+                </div>
+                <div class="footer_descr">
+                    © 2025, <br>
+                    All rights are reserved and protected in accordance with the current legislation of Ukraine. The use of information, photos and video materials in any form is allowed only with a link to the official website of Lubny Machine-Building Plant JSC "Motor Sich".
+                </div>
+           </div>
+        </div>
+    </section>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script_services.js"></script>
+</body>
+</html>
